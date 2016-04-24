@@ -1,0 +1,1098 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 47;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		240CC59918FEB2DE00F113B3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 240CC59818FEB2DE00F113B3 /* Foundation.framework */; };
+		240CC59B18FEB2DE00F113B3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 240CC59A18FEB2DE00F113B3 /* CoreGraphics.framework */; };
+		240CC59D18FEB2DE00F113B3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 240CC59C18FEB2DE00F113B3 /* UIKit.framework */; };
+		240CC5A318FEB2DE00F113B3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 240CC5A118FEB2DE00F113B3 /* InfoPlist.strings */; };
+		240CC5A518FEB2DE00F113B3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 240CC5A418FEB2DE00F113B3 /* main.m */; };
+		240CC5A918FEB2DE00F113B3 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 240CC5A818FEB2DE00F113B3 /* AppDelegate.mm */; };
+		240CC5AB18FEB2DE00F113B3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 240CC5AA18FEB2DE00F113B3 /* Images.xcassets */; };
+		240CC5B318FEB2DE00F113B3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 240CC59818FEB2DE00F113B3 /* Foundation.framework */; };
+		240CC5B418FEB2DE00F113B3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 240CC59C18FEB2DE00F113B3 /* UIKit.framework */; };
+		240CC5BC18FEB2DE00F113B3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 240CC5BA18FEB2DE00F113B3 /* InfoPlist.strings */; };
+		240CC5BE18FEB2DE00F113B3 /* MyCADTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 240CC5BD18FEB2DE00F113B3 /* MyCADTests.m */; };
+		240CC5F518FEB31100F113B3 /* CADViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 240CC5C818FEB31100F113B3 /* CADViewController.m */; };
+		240CC5F618FEB31100F113B3 /* CADViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 240CC5C918FEB31100F113B3 /* CADViewController.xib */; };
+		240CC61318FEB31100F113B3 /* UIScrollToolbarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 240CC5F218FEB31100F113B3 /* UIScrollToolbarView.m */; };
+		2410620E190212E900D1B0DF /* CADDrawCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 241061F9190212E900D1B0DF /* CADDrawCommand.m */; };
+		24106211190212E900D1B0DF /* CADCommandManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 24106202190212E900D1B0DF /* CADCommandManager.m */; };
+		2424E60C1914ED6900E6CCBD /* CADZoomCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 2424E60B1914ED6900E6CCBD /* CADZoomCommand.m */; };
+		243B074F191A82450078BF1E /* CADHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 243B074E191A82450078BF1E /* CADHelper.m */; };
+		243F62CD19192A80008554FA /* OpenGLViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 243F62CC19192A80008554FA /* OpenGLViewController.xib */; };
+		244CEB8719179E5D007DCE4A /* CADPoint.mm in Sources */ = {isa = PBXBuildFile; fileRef = 244CEB8319179E5D007DCE4A /* CADPoint.mm */; };
+		244CEB9D19179E6A007DCE4A /* CADLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 244CEB8919179E6A007DCE4A /* CADLine.m */; };
+		244CEB9E19179E6A007DCE4A /* CADShape.m in Sources */ = {isa = PBXBuildFile; fileRef = 244CEB8A19179E6A007DCE4A /* CADShape.m */; };
+		244CEB9F19179E6A007DCE4A /* CADPolyline.m in Sources */ = {isa = PBXBuildFile; fileRef = 244CEB9219179E6A007DCE4A /* CADPolyline.m */; };
+		244CEBA019179E6A007DCE4A /* CADEllipse.m in Sources */ = {isa = PBXBuildFile; fileRef = 244CEB9319179E6A007DCE4A /* CADEllipse.m */; };
+		244CEBA119179E6A007DCE4A /* CADCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = 244CEB9719179E6A007DCE4A /* CADCircle.m */; };
+		244CEBA219179E6A007DCE4A /* CADRectangle.m in Sources */ = {isa = PBXBuildFile; fileRef = 244CEB9819179E6A007DCE4A /* CADRectangle.m */; };
+		244CEBA319179E6A007DCE4A /* CADLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 244CEB9919179E6A007DCE4A /* CADLayer.m */; };
+		244CEBA419179E6A007DCE4A /* CADArc.m in Sources */ = {isa = PBXBuildFile; fileRef = 244CEB9A19179E6A007DCE4A /* CADArc.m */; };
+		244CEBA519179E6A007DCE4A /* CADPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 244CEB9B19179E6A007DCE4A /* CADPath.m */; };
+		244CEBA619179E6A007DCE4A /* CADLayerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 244CEB9C19179E6A007DCE4A /* CADLayerManager.m */; };
+		244CEBAC19179E71007DCE4A /* QuartzDrawingCanvas.m in Sources */ = {isa = PBXBuildFile; fileRef = 244CEBA919179E71007DCE4A /* QuartzDrawingCanvas.m */; };
+		244CEBAD19179E71007DCE4A /* GLDrawUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 244CEBAB19179E71007DCE4A /* GLDrawUtils.m */; };
+		244CEBB01917B2F6007DCE4A /* OpenGLDrawingCanvas.m in Sources */ = {isa = PBXBuildFile; fileRef = 244CEBAF1917B2F6007DCE4A /* OpenGLDrawingCanvas.m */; };
+		246C6AE5190CEBA90035707C /* Color_Button_SelectedBg.png in Resources */ = {isa = PBXBuildFile; fileRef = 246C6A88190CEBA90035707C /* Color_Button_SelectedBg.png */; };
+		246C6AE6190CEBA90035707C /* Color_Button_SelectedBg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 246C6A89190CEBA90035707C /* Color_Button_SelectedBg@2x.png */; };
+		246C6AE7190CEBA90035707C /* Color_Button_Top.png in Resources */ = {isa = PBXBuildFile; fileRef = 246C6A8A190CEBA90035707C /* Color_Button_Top.png */; };
+		246C6AE8190CEBA90035707C /* Color_Button_Top@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 246C6A8B190CEBA90035707C /* Color_Button_Top@2x.png */; };
+		246C6AE9190CEBA90035707C /* DimensionTools_Angle.png in Resources */ = {isa = PBXBuildFile; fileRef = 246C6A8C190CEBA90035707C /* DimensionTools_Angle.png */; };
+		246C6AEA190CEBA90035707C /* DimensionTools_Angle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 246C6A8D190CEBA90035707C /* DimensionTools_Angle@2x.png */; };
+		246C6AEB190CEBA90035707C /* DimensionTools_BtnSelectedBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 246C6A8E190CEBA90035707C /* DimensionTools_BtnSelectedBG.png */; };
+		246C6AEC190CEBA90035707C /* DimensionTools_BtnSelectedBG@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 246C6A8F190CEBA90035707C /* DimensionTools_BtnSelectedBG@2x.png */; };
+		246C6AED190CEBA90035707C /* DimensionTools_Linear.png in Resources */ = {isa = PBXBuildFile; fileRef = 246C6A90190CEBA90035707C /* DimensionTools_Linear.png */; };
+		246C6AEE190CEBA90035707C /* DimensionTools_Linear@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 246C6A91190CEBA90035707C /* DimensionTools_Linear@2x.png */; };
+		246C6AEF190CEBA90035707C /* DimensionTools_Radius.png in Resources */ = {isa = PBXBuildFile; fileRef = 246C6A92190CEBA90035707C /* DimensionTools_Radius.png */; };
+		246C6AF0190CEBA90035707C /* DimensionTools_Radius@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 246C6A93190CEBA90035707C /* DimensionTools_Radius@2x.png */; };
+		246C6AF1190CEBA90035707C /* DrawTools_Arc.png in Resources */ = {isa = PBXBuildFile; fileRef = 246C6A94190CEBA90035707C /* DrawTools_Arc.png */; };
+		246C6AF2190CEBA90035707C /* DrawTools_Arc@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 246C6A95190CEBA90035707C /* DrawTools_Arc@2x.png */; };
+		246C6AF3190CEBA90035707C /* DrawTools_Area.png in Resources */ = {isa = PBXBuildFile; fileRef = 246C6A96190CEBA90035707C /* DrawTools_Area.png */; };
+		246C6AF4190CEBA90035707C /* DrawTools_Area@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 246C6A97190CEBA90035707C /* DrawTools_Area@2x.png */; };
+		246C6AF5190CEBA90035707C /* DrawTools_BtnSelectedBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 246C6A98190CEBA90035707C /* DrawTools_BtnSelectedBG.png */; };
+		246C6AF6190CEBA90035707C /* DrawTools_BtnSelectedBG@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 246C6A99190CEBA90035707C /* DrawTools_BtnSelectedBG@2x.png */; };
+		246C6AF7190CEBA90035707C /* DrawTools_Circle.png in Resources */ = {isa = PBXBuildFile; fileRef = 246C6A9A190CEBA90035707C /* DrawTools_Circle.png */; };
+		246C6AF8190CEBA90035707C /* DrawTools_Circle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 246C6A9B190CEBA90035707C /* DrawTools_Circle@2x.png */; };
+		246C6AF9190CEBA90035707C /* DrawTools_Distance.png in Resources */ = {isa = PBXBuildFile; fileRef = 246C6A9C190CEBA90035707C /* DrawTools_Distance.png */; };
+		246C6AFA190CEBA90035707C /* DrawTools_Distance@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 246C6A9D190CEBA90035707C /* DrawTools_Distance@2x.png */; };
+		246C6AFB190CEBA90035707C /* DrawTools_Line.png in Resources */ = {isa = PBXBuildFile; fileRef = 246C6A9E190CEBA90035707C /* DrawTools_Line.png */; };
+		246C6AFC190CEBA90035707C /* DrawTools_Line@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 246C6A9F190CEBA90035707C /* DrawTools_Line@2x.png */; };
+		246C6AFD190CEBA90035707C /* DrawTools_Polyline.png in Resources */ = {isa = PBXBuildFile; fileRef = 246C6AA0190CEBA90035707C /* DrawTools_Polyline.png */; };
+		246C6AFE190CEBA90035707C /* DrawTools_Polyline@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 246C6AA1190CEBA90035707C /* DrawTools_Polyline@2x.png */; };
+		246C6AFF190CEBA90035707C /* DrawTools_Rectange.png in Resources */ = {isa = PBXBuildFile; fileRef = 246C6AA2190CEBA90035707C /* DrawTools_Rectange.png */; };
+		246C6B00190CEBA90035707C /* DrawTools_Rectange@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 246C6AA3190CEBA90035707C /* DrawTools_Rectange@2x.png */; };
+		246C6B01190CEBA90035707C /* DrawTools_Text.png in Resources */ = {isa = PBXBuildFile; fileRef = 246C6AA4190CEBA90035707C /* DrawTools_Text.png */; };
+		246C6B02190CEBA90035707C /* DrawTools_Text@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 246C6AA5190CEBA90035707C /* DrawTools_Text@2x.png */; };
+		246C6B03190CEBA90035707C /* ExitIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 246C6AA6190CEBA90035707C /* ExitIcon.png */; };
+		246C6B04190CEBA90035707C /* ExitIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 246C6AA7190CEBA90035707C /* ExitIcon@2x.png */; };
+		246C6B05190CEBA90035707C /* MainTools_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 246C6AA8190CEBA90035707C /* MainTools_background.png */; };
+		246C6B06190CEBA90035707C /* MainTools_background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 246C6AA9190CEBA90035707C /* MainTools_background@2x.png */; };
+		246C6B07190CEBA90035707C /* MainTools_BtnSelectedBg.png in Resources */ = {isa = PBXBuildFile; fileRef = 246C6AAA190CEBA90035707C /* MainTools_BtnSelectedBg.png */; };
+		246C6B08190CEBA90035707C /* MainTools_BtnSelectedBg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 246C6AAB190CEBA90035707C /* MainTools_BtnSelectedBg@2x.png */; };
+		246C6B09190CEBA90035707C /* MainTools_Color.png in Resources */ = {isa = PBXBuildFile; fileRef = 246C6AAC190CEBA90035707C /* MainTools_Color.png */; };
+		246C6B0A190CEBA90035707C /* MainTools_Color@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 246C6AAD190CEBA90035707C /* MainTools_Color@2x.png */; };
+		246C6B0B190CEBA90035707C /* MainTools_Dimension.png in Resources */ = {isa = PBXBuildFile; fileRef = 246C6AAE190CEBA90035707C /* MainTools_Dimension.png */; };
+		246C6B0C190CEBA90035707C /* MainTools_Dimension@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 246C6AAF190CEBA90035707C /* MainTools_Dimension@2x.png */; };
+		246C6B0D190CEBA90035707C /* MainTools_Draw.png in Resources */ = {isa = PBXBuildFile; fileRef = 246C6AB0190CEBA90035707C /* MainTools_Draw.png */; };
+		246C6B0E190CEBA90035707C /* MainTools_Draw@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 246C6AB1190CEBA90035707C /* MainTools_Draw@2x.png */; };
+		246C6B0F190CEBA90035707C /* MainTools_Layer.png in Resources */ = {isa = PBXBuildFile; fileRef = 246C6AB2190CEBA90035707C /* MainTools_Layer.png */; };
+		246C6B10190CEBA90035707C /* MainTools_Layer@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 246C6AB3190CEBA90035707C /* MainTools_Layer@2x.png */; };
+		246C6B11190CEBA90035707C /* MainTools_Mark.png in Resources */ = {isa = PBXBuildFile; fileRef = 246C6AB4190CEBA90035707C /* MainTools_Mark.png */; };
+		246C6B12190CEBA90035707C /* MainTools_Mark@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 246C6AB5190CEBA90035707C /* MainTools_Mark@2x.png */; };
+		246C6B13190CEBA90035707C /* MainTools_Model.png in Resources */ = {isa = PBXBuildFile; fileRef = 246C6AB6190CEBA90035707C /* MainTools_Model.png */; };
+		246C6B14190CEBA90035707C /* MainTools_Model@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 246C6AB7190CEBA90035707C /* MainTools_Model@2x.png */; };
+		246C6B15190CEBA90035707C /* MainTools_Redo.png in Resources */ = {isa = PBXBuildFile; fileRef = 246C6AB8190CEBA90035707C /* MainTools_Redo.png */; };
+		246C6B16190CEBA90035707C /* MainTools_Redo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 246C6AB9190CEBA90035707C /* MainTools_Redo@2x.png */; };
+		246C6B17190CEBA90035707C /* MainTools_Share.png in Resources */ = {isa = PBXBuildFile; fileRef = 246C6ABA190CEBA90035707C /* MainTools_Share.png */; };
+		246C6B18190CEBA90035707C /* MainTools_Share@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 246C6ABB190CEBA90035707C /* MainTools_Share@2x.png */; };
+		246C6B19190CEBA90035707C /* MainTools_Undo.png in Resources */ = {isa = PBXBuildFile; fileRef = 246C6ABC190CEBA90035707C /* MainTools_Undo.png */; };
+		246C6B1A190CEBA90035707C /* MainTools_Undo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 246C6ABD190CEBA90035707C /* MainTools_Undo@2x.png */; };
+		246C6B1B190CEBA90035707C /* MainTools_ViewMode.png in Resources */ = {isa = PBXBuildFile; fileRef = 246C6ABE190CEBA90035707C /* MainTools_ViewMode.png */; };
+		246C6B1C190CEBA90035707C /* MainTools_ViewMode@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 246C6ABF190CEBA90035707C /* MainTools_ViewMode@2x.png */; };
+		246C6B1D190CEBA90035707C /* MarkTools_Brush.png in Resources */ = {isa = PBXBuildFile; fileRef = 246C6AC0190CEBA90035707C /* MarkTools_Brush.png */; };
+		246C6B1E190CEBA90035707C /* MarkTools_Brush@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 246C6AC1190CEBA90035707C /* MarkTools_Brush@2x.png */; };
+		246C6B1F190CEBA90035707C /* MarkTools_BtnSelectedBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 246C6AC2190CEBA90035707C /* MarkTools_BtnSelectedBG.png */; };
+		246C6B20190CEBA90035707C /* MarkTools_BtnSelectedBG@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 246C6AC3190CEBA90035707C /* MarkTools_BtnSelectedBG@2x.png */; };
+		246C6B21190CEBA90035707C /* MarkTools_Cloud.png in Resources */ = {isa = PBXBuildFile; fileRef = 246C6AC4190CEBA90035707C /* MarkTools_Cloud.png */; };
+		246C6B22190CEBA90035707C /* MarkTools_Cloud@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 246C6AC5190CEBA90035707C /* MarkTools_Cloud@2x.png */; };
+		246C6B23190CEBA90035707C /* MarkTools_Image.png in Resources */ = {isa = PBXBuildFile; fileRef = 246C6AC6190CEBA90035707C /* MarkTools_Image.png */; };
+		246C6B24190CEBA90035707C /* MarkTools_Image@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 246C6AC7190CEBA90035707C /* MarkTools_Image@2x.png */; };
+		246C6B25190CEBA90035707C /* MarkTools_Rectangle.png in Resources */ = {isa = PBXBuildFile; fileRef = 246C6AC8190CEBA90035707C /* MarkTools_Rectangle.png */; };
+		246C6B26190CEBA90035707C /* MarkTools_Rectangle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 246C6AC9190CEBA90035707C /* MarkTools_Rectangle@2x.png */; };
+		246C6B27190CEBA90035707C /* MarkTools_SmartPen.png in Resources */ = {isa = PBXBuildFile; fileRef = 246C6ACA190CEBA90035707C /* MarkTools_SmartPen.png */; };
+		246C6B28190CEBA90035707C /* MarkTools_SmartPen@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 246C6ACB190CEBA90035707C /* MarkTools_SmartPen@2x.png */; };
+		246C6B29190CEBA90035707C /* MarkTools_SmartVoice.png in Resources */ = {isa = PBXBuildFile; fileRef = 246C6ACC190CEBA90035707C /* MarkTools_SmartVoice.png */; };
+		246C6B2A190CEBA90035707C /* MarkTools_SmartVoice@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 246C6ACD190CEBA90035707C /* MarkTools_SmartVoice@2x.png */; };
+		246C6B2B190CEBA90035707C /* MarkTools_Text.png in Resources */ = {isa = PBXBuildFile; fileRef = 246C6ACE190CEBA90035707C /* MarkTools_Text.png */; };
+		246C6B2C190CEBA90035707C /* MarkTools_Text@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 246C6ACF190CEBA90035707C /* MarkTools_Text@2x.png */; };
+		246C6B2D190CEBA90035707C /* my_image.png in Resources */ = {isa = PBXBuildFile; fileRef = 246C6AD0190CEBA90035707C /* my_image.png */; };
+		246C6B2E190CEBA90035707C /* Select_Align.png in Resources */ = {isa = PBXBuildFile; fileRef = 246C6AD1190CEBA90035707C /* Select_Align.png */; };
+		246C6B2F190CEBA90035707C /* Select_Align@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 246C6AD2190CEBA90035707C /* Select_Align@2x.png */; };
+		246C6B30190CEBA90035707C /* Select_Copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 246C6AD3190CEBA90035707C /* Select_Copy.png */; };
+		246C6B31190CEBA90035707C /* Select_Copy@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 246C6AD4190CEBA90035707C /* Select_Copy@2x.png */; };
+		246C6B32190CEBA90035707C /* Select_Deselect.png in Resources */ = {isa = PBXBuildFile; fileRef = 246C6AD5190CEBA90035707C /* Select_Deselect.png */; };
+		246C6B33190CEBA90035707C /* Select_Deselect@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 246C6AD6190CEBA90035707C /* Select_Deselect@2x.png */; };
+		246C6B34190CEBA90035707C /* Select_EditText.png in Resources */ = {isa = PBXBuildFile; fileRef = 246C6AD7190CEBA90035707C /* Select_EditText.png */; };
+		246C6B35190CEBA90035707C /* Select_EditText@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 246C6AD8190CEBA90035707C /* Select_EditText@2x.png */; };
+		246C6B36190CEBA90035707C /* Select_Erase.png in Resources */ = {isa = PBXBuildFile; fileRef = 246C6AD9190CEBA90035707C /* Select_Erase.png */; };
+		246C6B37190CEBA90035707C /* Select_Erase@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 246C6ADA190CEBA90035707C /* Select_Erase@2x.png */; };
+		246C6B38190CEBA90035707C /* Select_Mirror.png in Resources */ = {isa = PBXBuildFile; fileRef = 246C6ADB190CEBA90035707C /* Select_Mirror.png */; };
+		246C6B39190CEBA90035707C /* Select_Mirror@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 246C6ADC190CEBA90035707C /* Select_Mirror@2x.png */; };
+		246C6B3A190CEBA90035707C /* Select_Move.png in Resources */ = {isa = PBXBuildFile; fileRef = 246C6ADD190CEBA90035707C /* Select_Move.png */; };
+		246C6B3B190CEBA90035707C /* Select_Move@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 246C6ADE190CEBA90035707C /* Select_Move@2x.png */; };
+		246C6B3C190CEBA90035707C /* Select_Rotate.png in Resources */ = {isa = PBXBuildFile; fileRef = 246C6ADF190CEBA90035707C /* Select_Rotate.png */; };
+		246C6B3D190CEBA90035707C /* Select_Rotate@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 246C6AE0190CEBA90035707C /* Select_Rotate@2x.png */; };
+		246C6B3E190CEBA90035707C /* Select_Scale.png in Resources */ = {isa = PBXBuildFile; fileRef = 246C6AE1190CEBA90035707C /* Select_Scale.png */; };
+		246C6B3F190CEBA90035707C /* Select_Scale@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 246C6AE2190CEBA90035707C /* Select_Scale@2x.png */; };
+		246C6B40190CEBA90035707C /* ZoomextentsIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 246C6AE3190CEBA90035707C /* ZoomextentsIcon.png */; };
+		246C6B41190CEBA90035707C /* ZoomextentsIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 246C6AE4190CEBA90035707C /* ZoomextentsIcon@2x.png */; };
+		247473161908F39800DFF125 /* CADMirrorCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 247473151908F39800DFF125 /* CADMirrorCommand.m */; };
+		2474DABB190E4A5500F88EEC /* CADUndoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2474DABA190E4A5500F88EEC /* CADUndoManager.m */; };
+		2474DABE190E5EC400F88EEC /* CADSelectionCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 2474DABD190E5EC400F88EEC /* CADSelectionCommand.m */; };
+		2475FC2A190FCBE200B36A57 /* CADCommandBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 2475FC29190FCBE200B36A57 /* CADCommandBase.m */; };
+		247B184C1905502E00508783 /* CADRotateCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 247B184B1905502E00508783 /* CADRotateCommand.m */; };
+		248F9D851907CA9D001AB5E4 /* CADMoveCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 248F9D841907CA9D001AB5E4 /* CADMoveCommand.m */; };
+		248F9D881907CABF001AB5E4 /* CADScaleCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 248F9D871907CABF001AB5E4 /* CADScaleCommand.m */; };
+		24D5ADC01913952600C90D90 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24D5ADBF1913952600C90D90 /* OpenGLES.framework */; };
+		24D5ADC21913953600C90D90 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24D5ADC11913953600C90D90 /* GLKit.framework */; };
+		24D5ADC51913956800C90D90 /* OpenGLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D5ADC41913956800C90D90 /* OpenGLViewController.m */; };
+		5E731B681AFCAB0800E18912 /* CADColorToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E731B611AFCAB0800E18912 /* CADColorToolbar.m */; };
+		5E731B691AFCAB0800E18912 /* CADDrawToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E731B631AFCAB0800E18912 /* CADDrawToolbar.m */; };
+		5E731B6A1AFCAB0800E18912 /* CADEditToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E731B651AFCAB0800E18912 /* CADEditToolbar.m */; };
+		5E731B6B1AFCAB0800E18912 /* CADMainToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E731B671AFCAB0800E18912 /* CADMainToolbar.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		240CC5B518FEB2DE00F113B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 240CC58D18FEB2DE00F113B3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 240CC59418FEB2DE00F113B3;
+			remoteInfo = MyCAD;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		240CC59518FEB2DE00F113B3 /* MyCAD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCAD.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		240CC59818FEB2DE00F113B3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		240CC59A18FEB2DE00F113B3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		240CC59C18FEB2DE00F113B3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		240CC5A018FEB2DE00F113B3 /* MyCAD-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MyCAD-Info.plist"; sourceTree = "<group>"; };
+		240CC5A218FEB2DE00F113B3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		240CC5A418FEB2DE00F113B3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		240CC5A618FEB2DE00F113B3 /* MyCAD-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyCAD-Prefix.pch"; sourceTree = "<group>"; };
+		240CC5A718FEB2DE00F113B3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		240CC5A818FEB2DE00F113B3 /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
+		240CC5AA18FEB2DE00F113B3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		240CC5B018FEB2DE00F113B3 /* MyCADTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyCADTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		240CC5B918FEB2DE00F113B3 /* MyCADTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MyCADTests-Info.plist"; sourceTree = "<group>"; };
+		240CC5BB18FEB2DE00F113B3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		240CC5BD18FEB2DE00F113B3 /* MyCADTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyCADTests.m; sourceTree = "<group>"; };
+		240CC5C718FEB31100F113B3 /* CADViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADViewController.h; sourceTree = "<group>"; };
+		240CC5C818FEB31100F113B3 /* CADViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CADViewController.m; sourceTree = "<group>"; };
+		240CC5C918FEB31100F113B3 /* CADViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CADViewController.xib; sourceTree = "<group>"; };
+		240CC5F118FEB31100F113B3 /* UIScrollToolbarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIScrollToolbarView.h; sourceTree = "<group>"; };
+		240CC5F218FEB31100F113B3 /* UIScrollToolbarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIScrollToolbarView.m; sourceTree = "<group>"; };
+		241061F9190212E900D1B0DF /* CADDrawCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CADDrawCommand.m; sourceTree = "<group>"; };
+		241061FA190212E900D1B0DF /* CADCommandManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADCommandManager.h; sourceTree = "<group>"; };
+		241061FE190212E900D1B0DF /* CADCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADCommand.h; sourceTree = "<group>"; };
+		24106201190212E900D1B0DF /* CADDrawCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADDrawCommand.h; sourceTree = "<group>"; };
+		24106202190212E900D1B0DF /* CADCommandManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CADCommandManager.m; sourceTree = "<group>"; };
+		2424E60A1914ED6900E6CCBD /* CADZoomCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADZoomCommand.h; sourceTree = "<group>"; };
+		2424E60B1914ED6900E6CCBD /* CADZoomCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CADZoomCommand.m; sourceTree = "<group>"; };
+		243A2BCC1918658C00FA3998 /* CADConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADConstants.h; sourceTree = "<group>"; };
+		243B074E191A82450078BF1E /* CADHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CADHelper.m; sourceTree = "<group>"; };
+		243F62CC19192A80008554FA /* OpenGLViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OpenGLViewController.xib; sourceTree = "<group>"; };
+		243F62CF191937A6008554FA /* DrawingCanvas.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawingCanvas.h; sourceTree = "<group>"; };
+		244CEB8219179E5D007DCE4A /* CADHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADHelper.h; sourceTree = "<group>"; };
+		244CEB8319179E5D007DCE4A /* CADPoint.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CADPoint.mm; sourceTree = "<group>"; };
+		244CEB8419179E5D007DCE4A /* CADPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADPoint.h; sourceTree = "<group>"; };
+		244CEB8919179E6A007DCE4A /* CADLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CADLine.m; sourceTree = "<group>"; };
+		244CEB8A19179E6A007DCE4A /* CADShape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CADShape.m; sourceTree = "<group>"; };
+		244CEB8B19179E6A007DCE4A /* CADRectangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADRectangle.h; sourceTree = "<group>"; };
+		244CEB8C19179E6A007DCE4A /* CADPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADPath.h; sourceTree = "<group>"; };
+		244CEB8D19179E6A007DCE4A /* CADLayerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADLayerManager.h; sourceTree = "<group>"; };
+		244CEB8E19179E6A007DCE4A /* CADArc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADArc.h; sourceTree = "<group>"; };
+		244CEB8F19179E6A007DCE4A /* CADLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADLayer.h; sourceTree = "<group>"; };
+		244CEB9019179E6A007DCE4A /* CADPolyline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADPolyline.h; sourceTree = "<group>"; };
+		244CEB9119179E6A007DCE4A /* CADShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADShape.h; sourceTree = "<group>"; };
+		244CEB9219179E6A007DCE4A /* CADPolyline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CADPolyline.m; sourceTree = "<group>"; };
+		244CEB9319179E6A007DCE4A /* CADEllipse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CADEllipse.m; sourceTree = "<group>"; };
+		244CEB9419179E6A007DCE4A /* CADLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADLine.h; sourceTree = "<group>"; };
+		244CEB9519179E6A007DCE4A /* CADEllipse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADEllipse.h; sourceTree = "<group>"; };
+		244CEB9619179E6A007DCE4A /* CADCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADCircle.h; sourceTree = "<group>"; };
+		244CEB9719179E6A007DCE4A /* CADCircle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CADCircle.m; sourceTree = "<group>"; };
+		244CEB9819179E6A007DCE4A /* CADRectangle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CADRectangle.m; sourceTree = "<group>"; };
+		244CEB9919179E6A007DCE4A /* CADLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CADLayer.m; sourceTree = "<group>"; };
+		244CEB9A19179E6A007DCE4A /* CADArc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CADArc.m; sourceTree = "<group>"; };
+		244CEB9B19179E6A007DCE4A /* CADPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CADPath.m; sourceTree = "<group>"; };
+		244CEB9C19179E6A007DCE4A /* CADLayerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CADLayerManager.m; sourceTree = "<group>"; };
+		244CEBA819179E71007DCE4A /* QuartzDrawingCanvas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuartzDrawingCanvas.h; sourceTree = "<group>"; };
+		244CEBA919179E71007DCE4A /* QuartzDrawingCanvas.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuartzDrawingCanvas.m; sourceTree = "<group>"; };
+		244CEBAA19179E71007DCE4A /* GLDrawUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GLDrawUtils.h; path = ../Drawing/GLDrawUtils.h; sourceTree = "<group>"; };
+		244CEBAB19179E71007DCE4A /* GLDrawUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GLDrawUtils.m; path = ../Drawing/GLDrawUtils.m; sourceTree = "<group>"; };
+		244CEBAE1917B2F6007DCE4A /* OpenGLDrawingCanvas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGLDrawingCanvas.h; sourceTree = "<group>"; };
+		244CEBAF1917B2F6007DCE4A /* OpenGLDrawingCanvas.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenGLDrawingCanvas.m; sourceTree = "<group>"; };
+		246C6A88190CEBA90035707C /* Color_Button_SelectedBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Color_Button_SelectedBg.png; sourceTree = "<group>"; };
+		246C6A89190CEBA90035707C /* Color_Button_SelectedBg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Color_Button_SelectedBg@2x.png"; sourceTree = "<group>"; };
+		246C6A8A190CEBA90035707C /* Color_Button_Top.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Color_Button_Top.png; sourceTree = "<group>"; };
+		246C6A8B190CEBA90035707C /* Color_Button_Top@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Color_Button_Top@2x.png"; sourceTree = "<group>"; };
+		246C6A8C190CEBA90035707C /* DimensionTools_Angle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DimensionTools_Angle.png; sourceTree = "<group>"; };
+		246C6A8D190CEBA90035707C /* DimensionTools_Angle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DimensionTools_Angle@2x.png"; sourceTree = "<group>"; };
+		246C6A8E190CEBA90035707C /* DimensionTools_BtnSelectedBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DimensionTools_BtnSelectedBG.png; sourceTree = "<group>"; };
+		246C6A8F190CEBA90035707C /* DimensionTools_BtnSelectedBG@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DimensionTools_BtnSelectedBG@2x.png"; sourceTree = "<group>"; };
+		246C6A90190CEBA90035707C /* DimensionTools_Linear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DimensionTools_Linear.png; sourceTree = "<group>"; };
+		246C6A91190CEBA90035707C /* DimensionTools_Linear@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DimensionTools_Linear@2x.png"; sourceTree = "<group>"; };
+		246C6A92190CEBA90035707C /* DimensionTools_Radius.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DimensionTools_Radius.png; sourceTree = "<group>"; };
+		246C6A93190CEBA90035707C /* DimensionTools_Radius@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DimensionTools_Radius@2x.png"; sourceTree = "<group>"; };
+		246C6A94190CEBA90035707C /* DrawTools_Arc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DrawTools_Arc.png; sourceTree = "<group>"; };
+		246C6A95190CEBA90035707C /* DrawTools_Arc@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DrawTools_Arc@2x.png"; sourceTree = "<group>"; };
+		246C6A96190CEBA90035707C /* DrawTools_Area.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DrawTools_Area.png; sourceTree = "<group>"; };
+		246C6A97190CEBA90035707C /* DrawTools_Area@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DrawTools_Area@2x.png"; sourceTree = "<group>"; };
+		246C6A98190CEBA90035707C /* DrawTools_BtnSelectedBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DrawTools_BtnSelectedBG.png; sourceTree = "<group>"; };
+		246C6A99190CEBA90035707C /* DrawTools_BtnSelectedBG@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DrawTools_BtnSelectedBG@2x.png"; sourceTree = "<group>"; };
+		246C6A9A190CEBA90035707C /* DrawTools_Circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DrawTools_Circle.png; sourceTree = "<group>"; };
+		246C6A9B190CEBA90035707C /* DrawTools_Circle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DrawTools_Circle@2x.png"; sourceTree = "<group>"; };
+		246C6A9C190CEBA90035707C /* DrawTools_Distance.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DrawTools_Distance.png; sourceTree = "<group>"; };
+		246C6A9D190CEBA90035707C /* DrawTools_Distance@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DrawTools_Distance@2x.png"; sourceTree = "<group>"; };
+		246C6A9E190CEBA90035707C /* DrawTools_Line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DrawTools_Line.png; sourceTree = "<group>"; };
+		246C6A9F190CEBA90035707C /* DrawTools_Line@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DrawTools_Line@2x.png"; sourceTree = "<group>"; };
+		246C6AA0190CEBA90035707C /* DrawTools_Polyline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DrawTools_Polyline.png; sourceTree = "<group>"; };
+		246C6AA1190CEBA90035707C /* DrawTools_Polyline@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DrawTools_Polyline@2x.png"; sourceTree = "<group>"; };
+		246C6AA2190CEBA90035707C /* DrawTools_Rectange.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DrawTools_Rectange.png; sourceTree = "<group>"; };
+		246C6AA3190CEBA90035707C /* DrawTools_Rectange@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DrawTools_Rectange@2x.png"; sourceTree = "<group>"; };
+		246C6AA4190CEBA90035707C /* DrawTools_Text.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DrawTools_Text.png; sourceTree = "<group>"; };
+		246C6AA5190CEBA90035707C /* DrawTools_Text@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DrawTools_Text@2x.png"; sourceTree = "<group>"; };
+		246C6AA6190CEBA90035707C /* ExitIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ExitIcon.png; sourceTree = "<group>"; };
+		246C6AA7190CEBA90035707C /* ExitIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ExitIcon@2x.png"; sourceTree = "<group>"; };
+		246C6AA8190CEBA90035707C /* MainTools_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MainTools_background.png; sourceTree = "<group>"; };
+		246C6AA9190CEBA90035707C /* MainTools_background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MainTools_background@2x.png"; sourceTree = "<group>"; };
+		246C6AAA190CEBA90035707C /* MainTools_BtnSelectedBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MainTools_BtnSelectedBg.png; sourceTree = "<group>"; };
+		246C6AAB190CEBA90035707C /* MainTools_BtnSelectedBg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MainTools_BtnSelectedBg@2x.png"; sourceTree = "<group>"; };
+		246C6AAC190CEBA90035707C /* MainTools_Color.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MainTools_Color.png; sourceTree = "<group>"; };
+		246C6AAD190CEBA90035707C /* MainTools_Color@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MainTools_Color@2x.png"; sourceTree = "<group>"; };
+		246C6AAE190CEBA90035707C /* MainTools_Dimension.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MainTools_Dimension.png; sourceTree = "<group>"; };
+		246C6AAF190CEBA90035707C /* MainTools_Dimension@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MainTools_Dimension@2x.png"; sourceTree = "<group>"; };
+		246C6AB0190CEBA90035707C /* MainTools_Draw.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MainTools_Draw.png; sourceTree = "<group>"; };
+		246C6AB1190CEBA90035707C /* MainTools_Draw@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MainTools_Draw@2x.png"; sourceTree = "<group>"; };
+		246C6AB2190CEBA90035707C /* MainTools_Layer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MainTools_Layer.png; sourceTree = "<group>"; };
+		246C6AB3190CEBA90035707C /* MainTools_Layer@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MainTools_Layer@2x.png"; sourceTree = "<group>"; };
+		246C6AB4190CEBA90035707C /* MainTools_Mark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MainTools_Mark.png; sourceTree = "<group>"; };
+		246C6AB5190CEBA90035707C /* MainTools_Mark@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MainTools_Mark@2x.png"; sourceTree = "<group>"; };
+		246C6AB6190CEBA90035707C /* MainTools_Model.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MainTools_Model.png; sourceTree = "<group>"; };
+		246C6AB7190CEBA90035707C /* MainTools_Model@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MainTools_Model@2x.png"; sourceTree = "<group>"; };
+		246C6AB8190CEBA90035707C /* MainTools_Redo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MainTools_Redo.png; sourceTree = "<group>"; };
+		246C6AB9190CEBA90035707C /* MainTools_Redo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MainTools_Redo@2x.png"; sourceTree = "<group>"; };
+		246C6ABA190CEBA90035707C /* MainTools_Share.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MainTools_Share.png; sourceTree = "<group>"; };
+		246C6ABB190CEBA90035707C /* MainTools_Share@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MainTools_Share@2x.png"; sourceTree = "<group>"; };
+		246C6ABC190CEBA90035707C /* MainTools_Undo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MainTools_Undo.png; sourceTree = "<group>"; };
+		246C6ABD190CEBA90035707C /* MainTools_Undo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MainTools_Undo@2x.png"; sourceTree = "<group>"; };
+		246C6ABE190CEBA90035707C /* MainTools_ViewMode.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MainTools_ViewMode.png; sourceTree = "<group>"; };
+		246C6ABF190CEBA90035707C /* MainTools_ViewMode@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MainTools_ViewMode@2x.png"; sourceTree = "<group>"; };
+		246C6AC0190CEBA90035707C /* MarkTools_Brush.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MarkTools_Brush.png; sourceTree = "<group>"; };
+		246C6AC1190CEBA90035707C /* MarkTools_Brush@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MarkTools_Brush@2x.png"; sourceTree = "<group>"; };
+		246C6AC2190CEBA90035707C /* MarkTools_BtnSelectedBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MarkTools_BtnSelectedBG.png; sourceTree = "<group>"; };
+		246C6AC3190CEBA90035707C /* MarkTools_BtnSelectedBG@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MarkTools_BtnSelectedBG@2x.png"; sourceTree = "<group>"; };
+		246C6AC4190CEBA90035707C /* MarkTools_Cloud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MarkTools_Cloud.png; sourceTree = "<group>"; };
+		246C6AC5190CEBA90035707C /* MarkTools_Cloud@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MarkTools_Cloud@2x.png"; sourceTree = "<group>"; };
+		246C6AC6190CEBA90035707C /* MarkTools_Image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MarkTools_Image.png; sourceTree = "<group>"; };
+		246C6AC7190CEBA90035707C /* MarkTools_Image@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MarkTools_Image@2x.png"; sourceTree = "<group>"; };
+		246C6AC8190CEBA90035707C /* MarkTools_Rectangle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MarkTools_Rectangle.png; sourceTree = "<group>"; };
+		246C6AC9190CEBA90035707C /* MarkTools_Rectangle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MarkTools_Rectangle@2x.png"; sourceTree = "<group>"; };
+		246C6ACA190CEBA90035707C /* MarkTools_SmartPen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MarkTools_SmartPen.png; sourceTree = "<group>"; };
+		246C6ACB190CEBA90035707C /* MarkTools_SmartPen@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MarkTools_SmartPen@2x.png"; sourceTree = "<group>"; };
+		246C6ACC190CEBA90035707C /* MarkTools_SmartVoice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MarkTools_SmartVoice.png; sourceTree = "<group>"; };
+		246C6ACD190CEBA90035707C /* MarkTools_SmartVoice@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MarkTools_SmartVoice@2x.png"; sourceTree = "<group>"; };
+		246C6ACE190CEBA90035707C /* MarkTools_Text.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MarkTools_Text.png; sourceTree = "<group>"; };
+		246C6ACF190CEBA90035707C /* MarkTools_Text@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MarkTools_Text@2x.png"; sourceTree = "<group>"; };
+		246C6AD0190CEBA90035707C /* my_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = my_image.png; sourceTree = "<group>"; };
+		246C6AD1190CEBA90035707C /* Select_Align.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Select_Align.png; sourceTree = "<group>"; };
+		246C6AD2190CEBA90035707C /* Select_Align@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Select_Align@2x.png"; sourceTree = "<group>"; };
+		246C6AD3190CEBA90035707C /* Select_Copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Select_Copy.png; sourceTree = "<group>"; };
+		246C6AD4190CEBA90035707C /* Select_Copy@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Select_Copy@2x.png"; sourceTree = "<group>"; };
+		246C6AD5190CEBA90035707C /* Select_Deselect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Select_Deselect.png; sourceTree = "<group>"; };
+		246C6AD6190CEBA90035707C /* Select_Deselect@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Select_Deselect@2x.png"; sourceTree = "<group>"; };
+		246C6AD7190CEBA90035707C /* Select_EditText.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Select_EditText.png; sourceTree = "<group>"; };
+		246C6AD8190CEBA90035707C /* Select_EditText@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Select_EditText@2x.png"; sourceTree = "<group>"; };
+		246C6AD9190CEBA90035707C /* Select_Erase.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Select_Erase.png; sourceTree = "<group>"; };
+		246C6ADA190CEBA90035707C /* Select_Erase@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Select_Erase@2x.png"; sourceTree = "<group>"; };
+		246C6ADB190CEBA90035707C /* Select_Mirror.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Select_Mirror.png; sourceTree = "<group>"; };
+		246C6ADC190CEBA90035707C /* Select_Mirror@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Select_Mirror@2x.png"; sourceTree = "<group>"; };
+		246C6ADD190CEBA90035707C /* Select_Move.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Select_Move.png; sourceTree = "<group>"; };
+		246C6ADE190CEBA90035707C /* Select_Move@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Select_Move@2x.png"; sourceTree = "<group>"; };
+		246C6ADF190CEBA90035707C /* Select_Rotate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Select_Rotate.png; sourceTree = "<group>"; };
+		246C6AE0190CEBA90035707C /* Select_Rotate@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Select_Rotate@2x.png"; sourceTree = "<group>"; };
+		246C6AE1190CEBA90035707C /* Select_Scale.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Select_Scale.png; sourceTree = "<group>"; };
+		246C6AE2190CEBA90035707C /* Select_Scale@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Select_Scale@2x.png"; sourceTree = "<group>"; };
+		246C6AE3190CEBA90035707C /* ZoomextentsIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ZoomextentsIcon.png; sourceTree = "<group>"; };
+		246C6AE4190CEBA90035707C /* ZoomextentsIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ZoomextentsIcon@2x.png"; sourceTree = "<group>"; };
+		247473141908F39800DFF125 /* CADMirrorCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADMirrorCommand.h; sourceTree = "<group>"; };
+		247473151908F39800DFF125 /* CADMirrorCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CADMirrorCommand.m; sourceTree = "<group>"; };
+		2474DAB9190E4A5500F88EEC /* CADUndoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADUndoManager.h; sourceTree = "<group>"; };
+		2474DABA190E4A5500F88EEC /* CADUndoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CADUndoManager.m; sourceTree = "<group>"; };
+		2474DABC190E5EC400F88EEC /* CADSelectionCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADSelectionCommand.h; sourceTree = "<group>"; };
+		2474DABD190E5EC400F88EEC /* CADSelectionCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CADSelectionCommand.m; sourceTree = "<group>"; };
+		2475FC28190FCBE200B36A57 /* CADCommandBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADCommandBase.h; sourceTree = "<group>"; };
+		2475FC29190FCBE200B36A57 /* CADCommandBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CADCommandBase.m; sourceTree = "<group>"; };
+		247B184A1905502E00508783 /* CADRotateCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADRotateCommand.h; sourceTree = "<group>"; };
+		247B184B1905502E00508783 /* CADRotateCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CADRotateCommand.m; sourceTree = "<group>"; };
+		248F9D831907CA9D001AB5E4 /* CADMoveCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADMoveCommand.h; sourceTree = "<group>"; };
+		248F9D841907CA9D001AB5E4 /* CADMoveCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CADMoveCommand.m; sourceTree = "<group>"; };
+		248F9D861907CABF001AB5E4 /* CADScaleCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADScaleCommand.h; sourceTree = "<group>"; };
+		248F9D871907CABF001AB5E4 /* CADScaleCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CADScaleCommand.m; sourceTree = "<group>"; };
+		24D5ADBF1913952600C90D90 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		24D5ADC11913953600C90D90 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		24D5ADC31913956800C90D90 /* OpenGLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGLViewController.h; sourceTree = "<group>"; };
+		24D5ADC41913956800C90D90 /* OpenGLViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenGLViewController.m; sourceTree = "<group>"; };
+		5E731B601AFCAB0800E18912 /* CADColorToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADColorToolbar.h; sourceTree = "<group>"; };
+		5E731B611AFCAB0800E18912 /* CADColorToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CADColorToolbar.m; sourceTree = "<group>"; };
+		5E731B621AFCAB0800E18912 /* CADDrawToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADDrawToolbar.h; sourceTree = "<group>"; };
+		5E731B631AFCAB0800E18912 /* CADDrawToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CADDrawToolbar.m; sourceTree = "<group>"; };
+		5E731B641AFCAB0800E18912 /* CADEditToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADEditToolbar.h; sourceTree = "<group>"; };
+		5E731B651AFCAB0800E18912 /* CADEditToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CADEditToolbar.m; sourceTree = "<group>"; };
+		5E731B661AFCAB0800E18912 /* CADMainToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADMainToolbar.h; sourceTree = "<group>"; };
+		5E731B671AFCAB0800E18912 /* CADMainToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CADMainToolbar.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		240CC59218FEB2DE00F113B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24D5ADC21913953600C90D90 /* GLKit.framework in Frameworks */,
+				24D5ADC01913952600C90D90 /* OpenGLES.framework in Frameworks */,
+				240CC59B18FEB2DE00F113B3 /* CoreGraphics.framework in Frameworks */,
+				240CC59D18FEB2DE00F113B3 /* UIKit.framework in Frameworks */,
+				240CC59918FEB2DE00F113B3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		240CC5AD18FEB2DE00F113B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				240CC5B418FEB2DE00F113B3 /* UIKit.framework in Frameworks */,
+				240CC5B318FEB2DE00F113B3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		240CC58C18FEB2DE00F113B3 = {
+			isa = PBXGroup;
+			children = (
+				240CC59E18FEB2DE00F113B3 /* MyCAD */,
+				240CC5B718FEB2DE00F113B3 /* MyCADTests */,
+				240CC59718FEB2DE00F113B3 /* Frameworks */,
+				240CC59618FEB2DE00F113B3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		240CC59618FEB2DE00F113B3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				240CC59518FEB2DE00F113B3 /* MyCAD.app */,
+				240CC5B018FEB2DE00F113B3 /* MyCADTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		240CC59718FEB2DE00F113B3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				24D5ADC11913953600C90D90 /* GLKit.framework */,
+				24D5ADBF1913952600C90D90 /* OpenGLES.framework */,
+				240CC59818FEB2DE00F113B3 /* Foundation.framework */,
+				240CC59A18FEB2DE00F113B3 /* CoreGraphics.framework */,
+				240CC59C18FEB2DE00F113B3 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		240CC59E18FEB2DE00F113B3 /* MyCAD */ = {
+			isa = PBXGroup;
+			children = (
+				240CC5A718FEB2DE00F113B3 /* AppDelegate.h */,
+				240CC5A818FEB2DE00F113B3 /* AppDelegate.mm */,
+				240CC5C718FEB31100F113B3 /* CADViewController.h */,
+				240CC5C818FEB31100F113B3 /* CADViewController.m */,
+				240CC5C918FEB31100F113B3 /* CADViewController.xib */,
+				24D5ADC31913956800C90D90 /* OpenGLViewController.h */,
+				24D5ADC41913956800C90D90 /* OpenGLViewController.m */,
+				243F62CC19192A80008554FA /* OpenGLViewController.xib */,
+				5E731B5F1AFCAB0800E18912 /* Views */,
+				244CEBA719179E71007DCE4A /* Drawing */,
+				244CEB8819179E6A007DCE4A /* Geometry */,
+				241061F7190212E900D1B0DF /* Commands */,
+				240CC5F018FEB31100F113B3 /* UIControls */,
+				244CEB7E19179E5D007DCE4A /* Utils */,
+				240CC5D718FEB31100F113B3 /* Resources */,
+				240CC5AA18FEB2DE00F113B3 /* Images.xcassets */,
+				240CC59F18FEB2DE00F113B3 /* Supporting Files */,
+			);
+			path = MyCAD;
+			sourceTree = "<group>";
+		};
+		240CC59F18FEB2DE00F113B3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				240CC5A018FEB2DE00F113B3 /* MyCAD-Info.plist */,
+				240CC5A118FEB2DE00F113B3 /* InfoPlist.strings */,
+				240CC5A418FEB2DE00F113B3 /* main.m */,
+				240CC5A618FEB2DE00F113B3 /* MyCAD-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		240CC5B718FEB2DE00F113B3 /* MyCADTests */ = {
+			isa = PBXGroup;
+			children = (
+				240CC5BD18FEB2DE00F113B3 /* MyCADTests.m */,
+				240CC5B818FEB2DE00F113B3 /* Supporting Files */,
+			);
+			path = MyCADTests;
+			sourceTree = "<group>";
+		};
+		240CC5B818FEB2DE00F113B3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				240CC5B918FEB2DE00F113B3 /* MyCADTests-Info.plist */,
+				240CC5BA18FEB2DE00F113B3 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		240CC5D718FEB31100F113B3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				246C6A88190CEBA90035707C /* Color_Button_SelectedBg.png */,
+				246C6A89190CEBA90035707C /* Color_Button_SelectedBg@2x.png */,
+				246C6A8A190CEBA90035707C /* Color_Button_Top.png */,
+				246C6A8B190CEBA90035707C /* Color_Button_Top@2x.png */,
+				246C6A8C190CEBA90035707C /* DimensionTools_Angle.png */,
+				246C6A8D190CEBA90035707C /* DimensionTools_Angle@2x.png */,
+				246C6A8E190CEBA90035707C /* DimensionTools_BtnSelectedBG.png */,
+				246C6A8F190CEBA90035707C /* DimensionTools_BtnSelectedBG@2x.png */,
+				246C6A90190CEBA90035707C /* DimensionTools_Linear.png */,
+				246C6A91190CEBA90035707C /* DimensionTools_Linear@2x.png */,
+				246C6A92190CEBA90035707C /* DimensionTools_Radius.png */,
+				246C6A93190CEBA90035707C /* DimensionTools_Radius@2x.png */,
+				246C6A94190CEBA90035707C /* DrawTools_Arc.png */,
+				246C6A95190CEBA90035707C /* DrawTools_Arc@2x.png */,
+				246C6A96190CEBA90035707C /* DrawTools_Area.png */,
+				246C6A97190CEBA90035707C /* DrawTools_Area@2x.png */,
+				246C6A98190CEBA90035707C /* DrawTools_BtnSelectedBG.png */,
+				246C6A99190CEBA90035707C /* DrawTools_BtnSelectedBG@2x.png */,
+				246C6A9A190CEBA90035707C /* DrawTools_Circle.png */,
+				246C6A9B190CEBA90035707C /* DrawTools_Circle@2x.png */,
+				246C6A9C190CEBA90035707C /* DrawTools_Distance.png */,
+				246C6A9D190CEBA90035707C /* DrawTools_Distance@2x.png */,
+				246C6A9E190CEBA90035707C /* DrawTools_Line.png */,
+				246C6A9F190CEBA90035707C /* DrawTools_Line@2x.png */,
+				246C6AA0190CEBA90035707C /* DrawTools_Polyline.png */,
+				246C6AA1190CEBA90035707C /* DrawTools_Polyline@2x.png */,
+				246C6AA2190CEBA90035707C /* DrawTools_Rectange.png */,
+				246C6AA3190CEBA90035707C /* DrawTools_Rectange@2x.png */,
+				246C6AA4190CEBA90035707C /* DrawTools_Text.png */,
+				246C6AA5190CEBA90035707C /* DrawTools_Text@2x.png */,
+				246C6AA6190CEBA90035707C /* ExitIcon.png */,
+				246C6AA7190CEBA90035707C /* ExitIcon@2x.png */,
+				246C6AA8190CEBA90035707C /* MainTools_background.png */,
+				246C6AA9190CEBA90035707C /* MainTools_background@2x.png */,
+				246C6AAA190CEBA90035707C /* MainTools_BtnSelectedBg.png */,
+				246C6AAB190CEBA90035707C /* MainTools_BtnSelectedBg@2x.png */,
+				246C6AAC190CEBA90035707C /* MainTools_Color.png */,
+				246C6AAD190CEBA90035707C /* MainTools_Color@2x.png */,
+				246C6AAE190CEBA90035707C /* MainTools_Dimension.png */,
+				246C6AAF190CEBA90035707C /* MainTools_Dimension@2x.png */,
+				246C6AB0190CEBA90035707C /* MainTools_Draw.png */,
+				246C6AB1190CEBA90035707C /* MainTools_Draw@2x.png */,
+				246C6AB2190CEBA90035707C /* MainTools_Layer.png */,
+				246C6AB3190CEBA90035707C /* MainTools_Layer@2x.png */,
+				246C6AB4190CEBA90035707C /* MainTools_Mark.png */,
+				246C6AB5190CEBA90035707C /* MainTools_Mark@2x.png */,
+				246C6AB6190CEBA90035707C /* MainTools_Model.png */,
+				246C6AB7190CEBA90035707C /* MainTools_Model@2x.png */,
+				246C6AB8190CEBA90035707C /* MainTools_Redo.png */,
+				246C6AB9190CEBA90035707C /* MainTools_Redo@2x.png */,
+				246C6ABA190CEBA90035707C /* MainTools_Share.png */,
+				246C6ABB190CEBA90035707C /* MainTools_Share@2x.png */,
+				246C6ABC190CEBA90035707C /* MainTools_Undo.png */,
+				246C6ABD190CEBA90035707C /* MainTools_Undo@2x.png */,
+				246C6ABE190CEBA90035707C /* MainTools_ViewMode.png */,
+				246C6ABF190CEBA90035707C /* MainTools_ViewMode@2x.png */,
+				246C6AC0190CEBA90035707C /* MarkTools_Brush.png */,
+				246C6AC1190CEBA90035707C /* MarkTools_Brush@2x.png */,
+				246C6AC2190CEBA90035707C /* MarkTools_BtnSelectedBG.png */,
+				246C6AC3190CEBA90035707C /* MarkTools_BtnSelectedBG@2x.png */,
+				246C6AC4190CEBA90035707C /* MarkTools_Cloud.png */,
+				246C6AC5190CEBA90035707C /* MarkTools_Cloud@2x.png */,
+				246C6AC6190CEBA90035707C /* MarkTools_Image.png */,
+				246C6AC7190CEBA90035707C /* MarkTools_Image@2x.png */,
+				246C6AC8190CEBA90035707C /* MarkTools_Rectangle.png */,
+				246C6AC9190CEBA90035707C /* MarkTools_Rectangle@2x.png */,
+				246C6ACA190CEBA90035707C /* MarkTools_SmartPen.png */,
+				246C6ACB190CEBA90035707C /* MarkTools_SmartPen@2x.png */,
+				246C6ACC190CEBA90035707C /* MarkTools_SmartVoice.png */,
+				246C6ACD190CEBA90035707C /* MarkTools_SmartVoice@2x.png */,
+				246C6ACE190CEBA90035707C /* MarkTools_Text.png */,
+				246C6ACF190CEBA90035707C /* MarkTools_Text@2x.png */,
+				246C6AD0190CEBA90035707C /* my_image.png */,
+				246C6AD1190CEBA90035707C /* Select_Align.png */,
+				246C6AD2190CEBA90035707C /* Select_Align@2x.png */,
+				246C6AD3190CEBA90035707C /* Select_Copy.png */,
+				246C6AD4190CEBA90035707C /* Select_Copy@2x.png */,
+				246C6AD5190CEBA90035707C /* Select_Deselect.png */,
+				246C6AD6190CEBA90035707C /* Select_Deselect@2x.png */,
+				246C6AD7190CEBA90035707C /* Select_EditText.png */,
+				246C6AD8190CEBA90035707C /* Select_EditText@2x.png */,
+				246C6AD9190CEBA90035707C /* Select_Erase.png */,
+				246C6ADA190CEBA90035707C /* Select_Erase@2x.png */,
+				246C6ADB190CEBA90035707C /* Select_Mirror.png */,
+				246C6ADC190CEBA90035707C /* Select_Mirror@2x.png */,
+				246C6ADD190CEBA90035707C /* Select_Move.png */,
+				246C6ADE190CEBA90035707C /* Select_Move@2x.png */,
+				246C6ADF190CEBA90035707C /* Select_Rotate.png */,
+				246C6AE0190CEBA90035707C /* Select_Rotate@2x.png */,
+				246C6AE1190CEBA90035707C /* Select_Scale.png */,
+				246C6AE2190CEBA90035707C /* Select_Scale@2x.png */,
+				246C6AE3190CEBA90035707C /* ZoomextentsIcon.png */,
+				246C6AE4190CEBA90035707C /* ZoomextentsIcon@2x.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		240CC5F018FEB31100F113B3 /* UIControls */ = {
+			isa = PBXGroup;
+			children = (
+				240CC5F118FEB31100F113B3 /* UIScrollToolbarView.h */,
+				240CC5F218FEB31100F113B3 /* UIScrollToolbarView.m */,
+			);
+			path = UIControls;
+			sourceTree = "<group>";
+		};
+		241061F7190212E900D1B0DF /* Commands */ = {
+			isa = PBXGroup;
+			children = (
+				241061FE190212E900D1B0DF /* CADCommand.h */,
+				2475FC28190FCBE200B36A57 /* CADCommandBase.h */,
+				2475FC29190FCBE200B36A57 /* CADCommandBase.m */,
+				24106201190212E900D1B0DF /* CADDrawCommand.h */,
+				241061F9190212E900D1B0DF /* CADDrawCommand.m */,
+				248F9D831907CA9D001AB5E4 /* CADMoveCommand.h */,
+				248F9D841907CA9D001AB5E4 /* CADMoveCommand.m */,
+				247B184A1905502E00508783 /* CADRotateCommand.h */,
+				247B184B1905502E00508783 /* CADRotateCommand.m */,
+				248F9D861907CABF001AB5E4 /* CADScaleCommand.h */,
+				248F9D871907CABF001AB5E4 /* CADScaleCommand.m */,
+				2424E60A1914ED6900E6CCBD /* CADZoomCommand.h */,
+				2424E60B1914ED6900E6CCBD /* CADZoomCommand.m */,
+				247473141908F39800DFF125 /* CADMirrorCommand.h */,
+				247473151908F39800DFF125 /* CADMirrorCommand.m */,
+				2474DABC190E5EC400F88EEC /* CADSelectionCommand.h */,
+				2474DABD190E5EC400F88EEC /* CADSelectionCommand.m */,
+				241061FA190212E900D1B0DF /* CADCommandManager.h */,
+				24106202190212E900D1B0DF /* CADCommandManager.m */,
+				2474DAB9190E4A5500F88EEC /* CADUndoManager.h */,
+				2474DABA190E4A5500F88EEC /* CADUndoManager.m */,
+			);
+			name = Commands;
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		244CEB7E19179E5D007DCE4A /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				244CEB8419179E5D007DCE4A /* CADPoint.h */,
+				244CEB8319179E5D007DCE4A /* CADPoint.mm */,
+				244CEB8219179E5D007DCE4A /* CADHelper.h */,
+				243B074E191A82450078BF1E /* CADHelper.m */,
+				244CEBAA19179E71007DCE4A /* GLDrawUtils.h */,
+				244CEBAB19179E71007DCE4A /* GLDrawUtils.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		244CEB8819179E6A007DCE4A /* Geometry */ = {
+			isa = PBXGroup;
+			children = (
+				243A2BCC1918658C00FA3998 /* CADConstants.h */,
+				244CEB8F19179E6A007DCE4A /* CADLayer.h */,
+				244CEB9919179E6A007DCE4A /* CADLayer.m */,
+				244CEB8D19179E6A007DCE4A /* CADLayerManager.h */,
+				244CEB9C19179E6A007DCE4A /* CADLayerManager.m */,
+				244CEB8E19179E6A007DCE4A /* CADArc.h */,
+				244CEB9A19179E6A007DCE4A /* CADArc.m */,
+				244CEB9619179E6A007DCE4A /* CADCircle.h */,
+				244CEB9719179E6A007DCE4A /* CADCircle.m */,
+				244CEB9519179E6A007DCE4A /* CADEllipse.h */,
+				244CEB9319179E6A007DCE4A /* CADEllipse.m */,
+				244CEB9419179E6A007DCE4A /* CADLine.h */,
+				244CEB8919179E6A007DCE4A /* CADLine.m */,
+				244CEB8C19179E6A007DCE4A /* CADPath.h */,
+				244CEB9B19179E6A007DCE4A /* CADPath.m */,
+				244CEB9019179E6A007DCE4A /* CADPolyline.h */,
+				244CEB9219179E6A007DCE4A /* CADPolyline.m */,
+				244CEB8B19179E6A007DCE4A /* CADRectangle.h */,
+				244CEB9819179E6A007DCE4A /* CADRectangle.m */,
+				244CEB9119179E6A007DCE4A /* CADShape.h */,
+				244CEB8A19179E6A007DCE4A /* CADShape.m */,
+			);
+			path = Geometry;
+			sourceTree = "<group>";
+		};
+		244CEBA719179E71007DCE4A /* Drawing */ = {
+			isa = PBXGroup;
+			children = (
+				243F62CF191937A6008554FA /* DrawingCanvas.h */,
+				244CEBA819179E71007DCE4A /* QuartzDrawingCanvas.h */,
+				244CEBA919179E71007DCE4A /* QuartzDrawingCanvas.m */,
+				244CEBAE1917B2F6007DCE4A /* OpenGLDrawingCanvas.h */,
+				244CEBAF1917B2F6007DCE4A /* OpenGLDrawingCanvas.m */,
+			);
+			path = Drawing;
+			sourceTree = "<group>";
+		};
+		5E731B5F1AFCAB0800E18912 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5E731B601AFCAB0800E18912 /* CADColorToolbar.h */,
+				5E731B611AFCAB0800E18912 /* CADColorToolbar.m */,
+				5E731B621AFCAB0800E18912 /* CADDrawToolbar.h */,
+				5E731B631AFCAB0800E18912 /* CADDrawToolbar.m */,
+				5E731B641AFCAB0800E18912 /* CADEditToolbar.h */,
+				5E731B651AFCAB0800E18912 /* CADEditToolbar.m */,
+				5E731B661AFCAB0800E18912 /* CADMainToolbar.h */,
+				5E731B671AFCAB0800E18912 /* CADMainToolbar.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		240CC59418FEB2DE00F113B3 /* MyCAD */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 240CC5C118FEB2DE00F113B3 /* Build configuration list for PBXNativeTarget "MyCAD" */;
+			buildPhases = (
+				240CC59118FEB2DE00F113B3 /* Sources */,
+				240CC59218FEB2DE00F113B3 /* Frameworks */,
+				240CC59318FEB2DE00F113B3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyCAD;
+			productName = MyCAD;
+			productReference = 240CC59518FEB2DE00F113B3 /* MyCAD.app */;
+			productType = "com.apple.product-type.application";
+		};
+		240CC5AF18FEB2DE00F113B3 /* MyCADTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 240CC5C418FEB2DE00F113B3 /* Build configuration list for PBXNativeTarget "MyCADTests" */;
+			buildPhases = (
+				240CC5AC18FEB2DE00F113B3 /* Sources */,
+				240CC5AD18FEB2DE00F113B3 /* Frameworks */,
+				240CC5AE18FEB2DE00F113B3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				240CC5B618FEB2DE00F113B3 /* PBXTargetDependency */,
+			);
+			name = MyCADTests;
+			productName = MyCADTests;
+			productReference = 240CC5B018FEB2DE00F113B3 /* MyCADTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		240CC58D18FEB2DE00F113B3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = CAD;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Feng;
+				TargetAttributes = {
+					240CC5AF18FEB2DE00F113B3 = {
+						TestTargetID = 240CC59418FEB2DE00F113B3;
+					};
+				};
+			};
+			buildConfigurationList = 240CC59018FEB2DE00F113B3 /* Build configuration list for PBXProject "MyCAD" */;
+			compatibilityVersion = "Xcode 6.3";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 240CC58C18FEB2DE00F113B3;
+			productRefGroup = 240CC59618FEB2DE00F113B3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				240CC59418FEB2DE00F113B3 /* MyCAD */,
+				240CC5AF18FEB2DE00F113B3 /* MyCADTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		240CC59318FEB2DE00F113B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				246C6AEF190CEBA90035707C /* DimensionTools_Radius.png in Resources */,
+				246C6B1D190CEBA90035707C /* MarkTools_Brush.png in Resources */,
+				246C6B0C190CEBA90035707C /* MainTools_Dimension@2x.png in Resources */,
+				246C6AFE190CEBA90035707C /* DrawTools_Polyline@2x.png in Resources */,
+				246C6AF2190CEBA90035707C /* DrawTools_Arc@2x.png in Resources */,
+				246C6B34190CEBA90035707C /* Select_EditText.png in Resources */,
+				246C6B1F190CEBA90035707C /* MarkTools_BtnSelectedBG.png in Resources */,
+				246C6B1E190CEBA90035707C /* MarkTools_Brush@2x.png in Resources */,
+				246C6B0D190CEBA90035707C /* MainTools_Draw.png in Resources */,
+				246C6B02190CEBA90035707C /* DrawTools_Text@2x.png in Resources */,
+				246C6B31190CEBA90035707C /* Select_Copy@2x.png in Resources */,
+				246C6AE9190CEBA90035707C /* DimensionTools_Angle.png in Resources */,
+				246C6B41190CEBA90035707C /* ZoomextentsIcon@2x.png in Resources */,
+				246C6B25190CEBA90035707C /* MarkTools_Rectangle.png in Resources */,
+				246C6B23190CEBA90035707C /* MarkTools_Image.png in Resources */,
+				246C6AF6190CEBA90035707C /* DrawTools_BtnSelectedBG@2x.png in Resources */,
+				240CC5A318FEB2DE00F113B3 /* InfoPlist.strings in Resources */,
+				246C6AEE190CEBA90035707C /* DimensionTools_Linear@2x.png in Resources */,
+				246C6AF0190CEBA90035707C /* DimensionTools_Radius@2x.png in Resources */,
+				246C6B2A190CEBA90035707C /* MarkTools_SmartVoice@2x.png in Resources */,
+				246C6B01190CEBA90035707C /* DrawTools_Text.png in Resources */,
+				246C6B00190CEBA90035707C /* DrawTools_Rectange@2x.png in Resources */,
+				246C6B30190CEBA90035707C /* Select_Copy.png in Resources */,
+				246C6AE6190CEBA90035707C /* Color_Button_SelectedBg@2x.png in Resources */,
+				246C6B06190CEBA90035707C /* MainTools_background@2x.png in Resources */,
+				246C6B14190CEBA90035707C /* MainTools_Model@2x.png in Resources */,
+				246C6B19190CEBA90035707C /* MainTools_Undo.png in Resources */,
+				246C6B16190CEBA90035707C /* MainTools_Redo@2x.png in Resources */,
+				246C6B3F190CEBA90035707C /* Select_Scale@2x.png in Resources */,
+				246C6B39190CEBA90035707C /* Select_Mirror@2x.png in Resources */,
+				246C6B05190CEBA90035707C /* MainTools_background.png in Resources */,
+				246C6B2B190CEBA90035707C /* MarkTools_Text.png in Resources */,
+				246C6AEA190CEBA90035707C /* DimensionTools_Angle@2x.png in Resources */,
+				246C6B07190CEBA90035707C /* MainTools_BtnSelectedBg.png in Resources */,
+				246C6AE5190CEBA90035707C /* Color_Button_SelectedBg.png in Resources */,
+				246C6AF1190CEBA90035707C /* DrawTools_Arc.png in Resources */,
+				246C6B2E190CEBA90035707C /* Select_Align.png in Resources */,
+				246C6AFD190CEBA90035707C /* DrawTools_Polyline.png in Resources */,
+				246C6B11190CEBA90035707C /* MainTools_Mark.png in Resources */,
+				246C6B03190CEBA90035707C /* ExitIcon.png in Resources */,
+				246C6B26190CEBA90035707C /* MarkTools_Rectangle@2x.png in Resources */,
+				246C6B18190CEBA90035707C /* MainTools_Share@2x.png in Resources */,
+				246C6B40190CEBA90035707C /* ZoomextentsIcon.png in Resources */,
+				246C6B12190CEBA90035707C /* MainTools_Mark@2x.png in Resources */,
+				246C6B36190CEBA90035707C /* Select_Erase.png in Resources */,
+				246C6B04190CEBA90035707C /* ExitIcon@2x.png in Resources */,
+				246C6B0A190CEBA90035707C /* MainTools_Color@2x.png in Resources */,
+				246C6AE8190CEBA90035707C /* Color_Button_Top@2x.png in Resources */,
+				246C6B3E190CEBA90035707C /* Select_Scale.png in Resources */,
+				246C6B15190CEBA90035707C /* MainTools_Redo.png in Resources */,
+				246C6AEB190CEBA90035707C /* DimensionTools_BtnSelectedBG.png in Resources */,
+				246C6AE7190CEBA90035707C /* Color_Button_Top.png in Resources */,
+				246C6B22190CEBA90035707C /* MarkTools_Cloud@2x.png in Resources */,
+				246C6B17190CEBA90035707C /* MainTools_Share.png in Resources */,
+				246C6B08190CEBA90035707C /* MainTools_BtnSelectedBg@2x.png in Resources */,
+				246C6AF4190CEBA90035707C /* DrawTools_Area@2x.png in Resources */,
+				240CC5F618FEB31100F113B3 /* CADViewController.xib in Resources */,
+				246C6AFF190CEBA90035707C /* DrawTools_Rectange.png in Resources */,
+				246C6B10190CEBA90035707C /* MainTools_Layer@2x.png in Resources */,
+				246C6AFA190CEBA90035707C /* DrawTools_Distance@2x.png in Resources */,
+				246C6B27190CEBA90035707C /* MarkTools_SmartPen.png in Resources */,
+				246C6AED190CEBA90035707C /* DimensionTools_Linear.png in Resources */,
+				246C6B38190CEBA90035707C /* Select_Mirror.png in Resources */,
+				246C6B13190CEBA90035707C /* MainTools_Model.png in Resources */,
+				243F62CD19192A80008554FA /* OpenGLViewController.xib in Resources */,
+				246C6B3A190CEBA90035707C /* Select_Move.png in Resources */,
+				240CC5AB18FEB2DE00F113B3 /* Images.xcassets in Resources */,
+				246C6AF9190CEBA90035707C /* DrawTools_Distance.png in Resources */,
+				246C6B20190CEBA90035707C /* MarkTools_BtnSelectedBG@2x.png in Resources */,
+				246C6B0E190CEBA90035707C /* MainTools_Draw@2x.png in Resources */,
+				246C6B0B190CEBA90035707C /* MainTools_Dimension.png in Resources */,
+				246C6AF3190CEBA90035707C /* DrawTools_Area.png in Resources */,
+				246C6B3D190CEBA90035707C /* Select_Rotate@2x.png in Resources */,
+				246C6B2D190CEBA90035707C /* my_image.png in Resources */,
+				246C6AFB190CEBA90035707C /* DrawTools_Line.png in Resources */,
+				246C6B35190CEBA90035707C /* Select_EditText@2x.png in Resources */,
+				246C6B09190CEBA90035707C /* MainTools_Color.png in Resources */,
+				246C6B28190CEBA90035707C /* MarkTools_SmartPen@2x.png in Resources */,
+				246C6B1C190CEBA90035707C /* MainTools_ViewMode@2x.png in Resources */,
+				246C6B0F190CEBA90035707C /* MainTools_Layer.png in Resources */,
+				246C6B21190CEBA90035707C /* MarkTools_Cloud.png in Resources */,
+				246C6B3B190CEBA90035707C /* Select_Move@2x.png in Resources */,
+				246C6B2C190CEBA90035707C /* MarkTools_Text@2x.png in Resources */,
+				246C6B32190CEBA90035707C /* Select_Deselect.png in Resources */,
+				246C6B3C190CEBA90035707C /* Select_Rotate.png in Resources */,
+				246C6AFC190CEBA90035707C /* DrawTools_Line@2x.png in Resources */,
+				246C6AF5190CEBA90035707C /* DrawTools_BtnSelectedBG.png in Resources */,
+				246C6B24190CEBA90035707C /* MarkTools_Image@2x.png in Resources */,
+				246C6AEC190CEBA90035707C /* DimensionTools_BtnSelectedBG@2x.png in Resources */,
+				246C6B29190CEBA90035707C /* MarkTools_SmartVoice.png in Resources */,
+				246C6AF7190CEBA90035707C /* DrawTools_Circle.png in Resources */,
+				246C6B33190CEBA90035707C /* Select_Deselect@2x.png in Resources */,
+				246C6B2F190CEBA90035707C /* Select_Align@2x.png in Resources */,
+				246C6B1A190CEBA90035707C /* MainTools_Undo@2x.png in Resources */,
+				246C6B37190CEBA90035707C /* Select_Erase@2x.png in Resources */,
+				246C6B1B190CEBA90035707C /* MainTools_ViewMode.png in Resources */,
+				246C6AF8190CEBA90035707C /* DrawTools_Circle@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		240CC5AE18FEB2DE00F113B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				240CC5BC18FEB2DE00F113B3 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		240CC59118FEB2DE00F113B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				244CEBA019179E6A007DCE4A /* CADEllipse.m in Sources */,
+				2424E60C1914ED6900E6CCBD /* CADZoomCommand.m in Sources */,
+				2475FC2A190FCBE200B36A57 /* CADCommandBase.m in Sources */,
+				2474DABB190E4A5500F88EEC /* CADUndoManager.m in Sources */,
+				244CEBA219179E6A007DCE4A /* CADRectangle.m in Sources */,
+				240CC5A518FEB2DE00F113B3 /* main.m in Sources */,
+				2474DABE190E5EC400F88EEC /* CADSelectionCommand.m in Sources */,
+				2410620E190212E900D1B0DF /* CADDrawCommand.m in Sources */,
+				244CEBAC19179E71007DCE4A /* QuartzDrawingCanvas.m in Sources */,
+				24106211190212E900D1B0DF /* CADCommandManager.m in Sources */,
+				244CEB8719179E5D007DCE4A /* CADPoint.mm in Sources */,
+				244CEBA119179E6A007DCE4A /* CADCircle.m in Sources */,
+				240CC5A918FEB2DE00F113B3 /* AppDelegate.mm in Sources */,
+				5E731B6A1AFCAB0800E18912 /* CADEditToolbar.m in Sources */,
+				244CEB9D19179E6A007DCE4A /* CADLine.m in Sources */,
+				5E731B691AFCAB0800E18912 /* CADDrawToolbar.m in Sources */,
+				247B184C1905502E00508783 /* CADRotateCommand.m in Sources */,
+				5E731B6B1AFCAB0800E18912 /* CADMainToolbar.m in Sources */,
+				248F9D881907CABF001AB5E4 /* CADScaleCommand.m in Sources */,
+				240CC5F518FEB31100F113B3 /* CADViewController.m in Sources */,
+				24D5ADC51913956800C90D90 /* OpenGLViewController.m in Sources */,
+				244CEBB01917B2F6007DCE4A /* OpenGLDrawingCanvas.m in Sources */,
+				248F9D851907CA9D001AB5E4 /* CADMoveCommand.m in Sources */,
+				244CEB9F19179E6A007DCE4A /* CADPolyline.m in Sources */,
+				244CEBA419179E6A007DCE4A /* CADArc.m in Sources */,
+				244CEB9E19179E6A007DCE4A /* CADShape.m in Sources */,
+				247473161908F39800DFF125 /* CADMirrorCommand.m in Sources */,
+				244CEBA519179E6A007DCE4A /* CADPath.m in Sources */,
+				240CC61318FEB31100F113B3 /* UIScrollToolbarView.m in Sources */,
+				243B074F191A82450078BF1E /* CADHelper.m in Sources */,
+				5E731B681AFCAB0800E18912 /* CADColorToolbar.m in Sources */,
+				244CEBA319179E6A007DCE4A /* CADLayer.m in Sources */,
+				244CEBAD19179E71007DCE4A /* GLDrawUtils.m in Sources */,
+				244CEBA619179E6A007DCE4A /* CADLayerManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		240CC5AC18FEB2DE00F113B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				240CC5BE18FEB2DE00F113B3 /* MyCADTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		240CC5B618FEB2DE00F113B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 240CC59418FEB2DE00F113B3 /* MyCAD */;
+			targetProxy = 240CC5B518FEB2DE00F113B3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		240CC5A118FEB2DE00F113B3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				240CC5A218FEB2DE00F113B3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		240CC5BA18FEB2DE00F113B3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				240CC5BB18FEB2DE00F113B3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		240CC5BF18FEB2DE00F113B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		240CC5C018FEB2DE00F113B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		240CC5C218FEB2DE00F113B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MyCAD/MyCAD-Prefix.pch";
+				INFOPLIST_FILE = "MyCAD/MyCAD-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		240CC5C318FEB2DE00F113B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MyCAD/MyCAD-Prefix.pch";
+				INFOPLIST_FILE = "MyCAD/MyCAD-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		240CC5C518FEB2DE00F113B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MyCAD.app/MyCAD";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MyCAD/MyCAD-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MyCADTests/MyCADTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		240CC5C618FEB2DE00F113B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MyCAD.app/MyCAD";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MyCAD/MyCAD-Prefix.pch";
+				INFOPLIST_FILE = "MyCADTests/MyCADTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		240CC59018FEB2DE00F113B3 /* Build configuration list for PBXProject "MyCAD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				240CC5BF18FEB2DE00F113B3 /* Debug */,
+				240CC5C018FEB2DE00F113B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		240CC5C118FEB2DE00F113B3 /* Build configuration list for PBXNativeTarget "MyCAD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				240CC5C218FEB2DE00F113B3 /* Debug */,
+				240CC5C318FEB2DE00F113B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		240CC5C418FEB2DE00F113B3 /* Build configuration list for PBXNativeTarget "MyCADTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				240CC5C518FEB2DE00F113B3 /* Debug */,
+				240CC5C618FEB2DE00F113B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 240CC58D18FEB2DE00F113B3 /* Project object */;
+}
